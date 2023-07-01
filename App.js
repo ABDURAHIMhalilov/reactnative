@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-around",
-    top: 100,
+    top: "100vh",
     position: "absolute",
     // bottom: 20,
     backgroundColor: "red",
