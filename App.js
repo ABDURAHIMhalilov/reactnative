@@ -1,4 +1,4 @@
-import { StatusBar } from "expo-status-bar";
+// import { StatusBar } from "expo-status-bar";
 import {
   StyleSheet,
   Text,
@@ -8,6 +8,8 @@ import {
   Image,
   Button,
   Alert,
+  Platform,
+  StatusBar,
 } from "react-native";
 
 // TouchableOpacity -> bosilganda opacity
@@ -15,46 +17,65 @@ import {
 // TouchableHighlight -> bosilganda qoraro
 // TouchableHighlight -> standart bosilish
 
+// export default function App() {
+//   return (
+//     <SafeAreaView style={styles.container}>
+//       <Text>asddddddddddddddddddddddddasd!sfdddddddd</Text>
+//       <Button
+//         color="dodgerblue"
+//         title="Click me"
+//         onPress={() => alert("o my god")}
+//       />
+//       <TouchableNativeFeedback
+//       // onPress={() =>
+//       //   // Alert.alert("o my god", "o my god2", [
+//       //   //   { text: "YES", onPress: () => console.log("YES") },
+//       //   //   { text: "NO", onPress: () => console.log("NO") },
+//       //   // ])
+
+//       //   // Alert.prompt("message1", "message2", (text) => console.log(text)) -> androidda ishlamidi
+//       //   // Alert.prompt("message1", "message2", (text) => console.log(text))
+//       // }
+//       >
+//         <View
+//           style={{ width: 350, height: 100, backgroundColor: "red" }}
+//         ></View>
+//         {/* <Image
+//           // blurRadius={10}
+//           // fadeDuration={1000}
+//           source={{
+//             width: 200,
+//             height: 300,
+//             uri: "https://picsum.photos/200/300",
+//           }}
+//         /> */}
+//       </TouchableNativeFeedback>
+//       {/* <StatusBar style="auto" /> */}
+//     </SafeAreaView>
+//   );
+// }
+
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>asddddddddddddddddddddddddasd!sfdddddddd</Text>
-      <Button
-        color="dodgerblue"
-        title="Click me"
-        onPress={() => alert("o my god")}
-      />
-      <TouchableNativeFeedback
-        onPress={() =>
-          Alert.alert("o my god", "o my god2", [
-            { text: "YES" },
-            { text: "NO" },
-          ])
-        }
-      >
-        <View
-          style={{ width: 350, height: 100, backgroundColor: "red" }}
-        ></View>
-        {/* <Image
-          // blurRadius={10}
-          // fadeDuration={1000}
-          source={{
-            width: 200,
-            height: 300,
-            uri: "https://picsum.photos/200/300",
-          }}
-        /> */}
-      </TouchableNativeFeedback>
-      {/* <StatusBar style="auto" /> */}
+    <SafeAreaView>
+      <View style={styles.scrollBar}>
+        <Text>home</Text>
+        <Text>home</Text>
+        <Text>home</Text>
+      </View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    // backgroundColor: "dodgerblue",
-    alignItems: "center",
-    justifyContent: "center",
+  scrollBar: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+    top: 100,
+    position: "absolute",
+    // bottom: 20,
+    backgroundColor: "red",
+    color: "black",
   },
 });
