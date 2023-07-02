@@ -15,17 +15,6 @@ import SearchScreen from "./app/SearchScreen";
 import { Button, TextInput } from "react-native-web";
 
 export default function App() {
-  function handleChange() {
-    // alert("asd");
-    Alert.prompt("rozimisiz", "rozimisiz", [
-      {
-        text: "cancel",
-        onPress: () => console.log("Cancel Pressed"),
-        style: "cancel",
-      },
-      { text: "OK", onPress: () => console.log("OK Pressed") },
-    ]);
-  }
   return (
     <ScrollView>
       <View style={styles.Views}>
@@ -37,7 +26,7 @@ export default function App() {
         <TextInput style={styles.input} />
         <TextInput style={styles.input} />
         <TextInput style={styles.input} />
-        <TouchableOpacity style={styles.buttonDiv} onPress={handleChange}>
+        <TouchableOpacity style={styles.buttonDiv}>
           <button style={styles.button}>Start</button>
         </TouchableOpacity>
       </View>
