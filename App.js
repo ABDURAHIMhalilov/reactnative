@@ -1,22 +1,36 @@
-import { View, Text } from "react-native";
-import Ionic from "react-native-vector-icons/Ionicons";
+import { Image, View, Text, StyleSheet, ScrollView } from "react-native";
+// import Ionic from "react-native-vector-icons/Ionicons";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigation } from "@react-navigation/bottom-tabs";
 import HomePage from "./app/HomeHeader";
 import SearchScreen from "./app/SearchScreen";
+import { Button } from "react-native-web";
 
-const App = () => {
-  const Tab = createBottomTabNavigation();
+export default function App() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Home" component={HomePage} />
-        <Tab.Screen name="Search" component={SearchScreen} />
-        {/* <Tab.Screen name="Notification" component={HomePage} /> */}
-        {/* <Tab.Screen name="Profile" component={HomePage} /> */}
-      </Tab.Navigator>
-    </NavigationContainer>
+    <ScrollView>
+      <View style={styles.container}>
+        <Image style={styles.image} source={require("./assets/icon.png")} />
+        <center>
+        <Text>hello wolrd</Text>
+        </center>
+        <Button title='salom' />
+      </View>
+    </ScrollView>
   );
-};
+}
 
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    width: "60%",
+    margin: "auto",
+    height: "200px",
+    backgroundColor: "red",
+    textAlign: 'center',
+  },
+  image: {
+    width: 100,
+    height: 100,
+    margin: 'auto'
+  },
+});
