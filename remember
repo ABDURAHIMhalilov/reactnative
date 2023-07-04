@@ -17,4 +17,19 @@
 
 
 
+
+
+    paddingTop: Platform.OS === "android" ? 35 : 0, -> android bosa padding
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+
+
+
+
+
+
+  console.log(Dimensions.get("screen")); -> telli olchab beradi
+
+
+
+
 */
