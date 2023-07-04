@@ -1,0 +1,20 @@
+/* 
+ onPress={() => 
+    Alert.prompt("my title", "my message", text => console.log(text))
+}
+
+
+
+
+          color="orange"
+          title="Click Me"
+          onPress={() =>
+            Alert.alert("my1", "my2", [
+            { text: "yes", onPress: () => console.log('yes')},
+            { text: "no", onPress: () => console.log('no') }])
+          }
+
+
+
+
+*/
