@@ -1,0 +1,13 @@
+/*
+flexDirection: "column-reverse" -> chap-pasga qoyadi
+flexDirection: "row-reverse" -> o'ng tepa
+flexDirection: "row" -> chap tepa
+  
+  
+  
+  alignItems types -> {
+      flex-end, -> pasga
+      center, -> o'rtaga
+      flex-start -> tepaga
+  }
+*/
